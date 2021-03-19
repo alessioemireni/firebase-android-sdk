@@ -81,7 +81,7 @@ public abstract class BindingWrapper {
   protected void setViewBgColorFromHex(@Nullable View view, @Nullable String hexColor) {
     if (view == null || TextUtils.isEmpty(hexColor)) return;
     try {
-      view.setBackgroundColor(Color.parseColor(hexColor));
+      view.setBackgroundColor(Color.parseColor("#111111"));
     } catch (IllegalArgumentException e) {
       // If the color didnt parse correctly, fail 'open', with default background color
       Logging.loge("Error parsing background color: " + e.toString() + " color: " + hexColor);
