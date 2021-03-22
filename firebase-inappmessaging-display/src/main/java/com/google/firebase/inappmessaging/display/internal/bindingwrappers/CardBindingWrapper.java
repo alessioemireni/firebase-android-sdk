@@ -86,7 +86,7 @@ public class CardBindingWrapper extends BindingWrapper {
       setButtons(actionListeners);
       setLayoutConfig(config);
       setDismissListener(dismissOnClickListener);
-      setViewBgColorFromHex(cardContentRoot, cardMessage.getBackgroundHexColor());
+      setViewBgColorFromHex(cardContentRoot, "#123456");
     }
     return layoutListener;
   }
